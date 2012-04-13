@@ -1,0 +1,33 @@
+﻿@model In_Mgmt.Models.UOM_Type
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend>UOM_Type</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.UOM_Type_Name)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.UOM_Type_Name)
+            @Html.ValidationMessageFor(model => model.UOM_Type_Name)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

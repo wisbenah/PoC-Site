@@ -1,0 +1,51 @@
+c:\documents and settings\lewis\my documents\visual studio 2010\Projects\In_Mgmt\In_Mgmt\bin\In_Mgmt.dll
+c:\documents and settings\lewis\my documents\visual studio 2010\Projects\In_Mgmt\In_Mgmt\bin\In_Mgmt.pdb
+c:\documents and settings\lewis\my documents\visual studio 2010\Projects\In_Mgmt\In_Mgmt\bin\EntityFramework.dll
+c:\documents and settings\lewis\my documents\visual studio 2010\Projects\In_Mgmt\In_Mgmt\bin\EntityFramework.xml
+c:\documents and settings\lewis\my documents\visual studio 2010\Projects\In_Mgmt\In_Mgmt\obj\Debug\ResolveAssemblyReference.cache
+c:\documents and settings\lewis\my documents\visual studio 2010\Projects\In_Mgmt\In_Mgmt\obj\Debug\In_Mgmt.dll
+c:\documents and settings\lewis\my documents\visual studio 2010\Projects\In_Mgmt\In_Mgmt\obj\Debug\In_Mgmt.pdb
+C:\Users\lyeah\Desktop\PoC Work\In_Mgmt\In_Mgmt\bin\In_Mgmt.dll
+C:\Users\lyeah\Desktop\PoC Work\In_Mgmt\In_Mgmt\bin\In_Mgmt.pdb
+C:\Users\lyeah\Desktop\PoC Work\In_Mgmt\In_Mgmt\bin\EntityFramework.dll
+C:\Users\lyeah\Desktop\PoC Work\In_Mgmt\In_Mgmt\bin\EntityFramework.xml
+C:\Users\lyeah\Desktop\PoC Work\In_Mgmt\In_Mgmt\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\lyeah\Desktop\PoC Work\In_Mgmt\In_Mgmt\obj\Debug\In_Mgmt.dll
+C:\Users\lyeah\Desktop\PoC Work\In_Mgmt\In_Mgmt\obj\Debug\In_Mgmt.pdb
+C:\Users\lyeah\Desktop\PoC Work\In_Mgmt\In_Mgmt\bin\Devtalk.EF.CodeFirst.dll
+C:\Users\lyeah\Desktop\PoC Work\In_Mgmt\In_Mgmt\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\lyeah\Desktop\PoC Work\In_Mgmt\In_Mgmt\bin\WebActivator.dll
+C:\Users\lyeah\Desktop\PoC Work\Backups\In_Mgmt\In_Mgmt\bin\In_Mgmt.dll
+C:\Users\lyeah\Desktop\PoC Work\Backups\In_Mgmt\In_Mgmt\bin\In_Mgmt.pdb
+C:\Users\lyeah\Desktop\PoC Work\Backups\In_Mgmt\In_Mgmt\bin\Devtalk.EF.CodeFirst.dll
+C:\Users\lyeah\Desktop\PoC Work\Backups\In_Mgmt\In_Mgmt\bin\EntityFramework.dll
+C:\Users\lyeah\Desktop\PoC Work\Backups\In_Mgmt\In_Mgmt\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\lyeah\Desktop\PoC Work\Backups\In_Mgmt\In_Mgmt\bin\WebActivator.dll
+C:\Users\lyeah\Desktop\PoC Work\Backups\In_Mgmt\In_Mgmt\bin\EntityFramework.xml
+C:\Users\lyeah\Desktop\PoC Work\Backups\In_Mgmt\In_Mgmt\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\lyeah\Desktop\PoC Work\Backups\In_Mgmt\In_Mgmt\obj\Debug\In_Mgmt.dll
+C:\Users\lyeah\Desktop\PoC Work\Backups\In_Mgmt\In_Mgmt\obj\Debug\In_Mgmt.pdb
+C:\Users\lyeah\Desktop\PoC Work\Backups\In_Mgmt3\In_Mgmt\bin\In_Mgmt.dll
+C:\Users\lyeah\Desktop\PoC Work\Backups\In_Mgmt3\In_Mgmt\bin\In_Mgmt.pdb
+C:\Users\lyeah\Desktop\PoC Work\Backups\In_Mgmt3\In_Mgmt\bin\Devtalk.EF.CodeFirst.dll
+C:\Users\lyeah\Desktop\PoC Work\Backups\In_Mgmt3\In_Mgmt\bin\EntityFramework.dll
+C:\Users\lyeah\Desktop\PoC Work\Backups\In_Mgmt3\In_Mgmt\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\lyeah\Desktop\PoC Work\Backups\In_Mgmt3\In_Mgmt\bin\WebActivator.dll
+C:\Users\lyeah\Desktop\PoC Work\Backups\In_Mgmt3\In_Mgmt\bin\EntityFramework.xml
+C:\Users\lyeah\Desktop\PoC Work\Backups\In_Mgmt3\In_Mgmt\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\lyeah\Desktop\PoC Work\Backups\In_Mgmt3\In_Mgmt\obj\Debug\In_Mgmt.dll
+C:\Users\lyeah\Desktop\PoC Work\Backups\In_Mgmt3\In_Mgmt\obj\Debug\In_Mgmt.pdb
+C:\Users\lyeah\Desktop\PoC Work\In_Mgmt3\In_Mgmt\bin\In_Mgmt.dll
+C:\Users\lyeah\Desktop\PoC Work\In_Mgmt3\In_Mgmt\bin\In_Mgmt.pdb
+C:\Users\lyeah\Desktop\PoC Work\In_Mgmt3\In_Mgmt\bin\Devtalk.EF.CodeFirst.dll
+C:\Users\lyeah\Desktop\PoC Work\In_Mgmt3\In_Mgmt\bin\EntityFramework.dll
+C:\Users\lyeah\Desktop\PoC Work\In_Mgmt3\In_Mgmt\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\lyeah\Desktop\PoC Work\In_Mgmt3\In_Mgmt\bin\WebActivator.dll
+C:\Users\lyeah\Desktop\PoC Work\In_Mgmt3\In_Mgmt\bin\EntityFramework.xml
+C:\Users\lyeah\Desktop\PoC Work\In_Mgmt3\In_Mgmt\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\lyeah\Desktop\PoC Work\In_Mgmt3\In_Mgmt\obj\Debug\In_Mgmt.dll
+C:\Users\lyeah\Desktop\PoC Work\In_Mgmt3\In_Mgmt\obj\Debug\In_Mgmt.pdb
+C:\Users\lyeah\Desktop\PoC Work\In_Mgmt\In_Mgmt\bin\Newtonsoft.Json.dll
+C:\Users\lyeah\Desktop\PoC Work\In_Mgmt\In_Mgmt\bin\Newtonsoft.Json.pdb
+C:\Users\lyeah\Desktop\PoC Work\In_Mgmt\In_Mgmt\bin\Newtonsoft.Json.xml
+C:\Users\lyeah\Desktop\PoC Work\In_Mgmt\In_Mgmt\bin\System.Web.Mvc.Html5.dll

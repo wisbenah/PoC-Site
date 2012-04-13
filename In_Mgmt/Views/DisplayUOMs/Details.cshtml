@@ -1,0 +1,30 @@
+﻿@model In_Mgmt.Models.DisplayUOM
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>DisplayUOM</legend>
+
+    <div class="display-label">DUOM_Name</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DUOM_Name)
+    </div>
+
+    <div class="display-label">DUOM_Code</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DUOM_Code)
+    </div>
+
+    <div class="display-label">Factor</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Factor)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.DUOMID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

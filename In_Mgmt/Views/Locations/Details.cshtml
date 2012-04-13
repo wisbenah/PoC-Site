@@ -1,0 +1,30 @@
+﻿@model In_Mgmt.Models.Location
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Location</legend>
+
+    <div class="display-label">LocationName</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.LocationName)
+    </div>
+
+    <div class="display-label">LocationCode</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.LocationCode)
+    </div>
+
+    <div class="display-label">Container</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Container.ContainerCode)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.LocationID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

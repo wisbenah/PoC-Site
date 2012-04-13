@@ -1,0 +1,53 @@
+﻿@model In_Mgmt.Models.Item
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>Item</legend>
+
+    <div class="display-label">ItemCode</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ItemCode)
+    </div>
+
+    <div class="display-label">ItemName</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ItemName)
+    </div>
+
+    <div class="display-label">ConsumptionUOM</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ConsumptionUOM.CUOM_Name)
+    </div>
+
+    <div class="display-label">InventoryUOM</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.InventoryUOM.IUOM_Name)
+    </div>
+
+    <div class="display-label">StoredUOMs</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.StoredUOMs.SUOM_Name)
+    </div>
+
+    <div class="display-label">DisplayUOMs</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DisplayUOMs.DUOM_Name)
+    </div>
+
+    <div class="display-label">ContainerLocation</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ContainerLocation)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

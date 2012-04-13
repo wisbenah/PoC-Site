@@ -1,0 +1,60 @@
+﻿@model In_Mgmt.Models.UOM
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend>UOM</legend>
+
+        @Html.HiddenFor(model => model.UOMID)
+        @Html.Hidden("InitialCode", Model.UOM_Code)
+        
+        <div class="editor-label">
+            @Html.LabelFor(model => model.UOM_Code)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.UOM_Code)
+            @Html.ValidationMessageFor(model => model.UOM_Code)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.UOM_Name)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.UOM_Name)
+            @Html.ValidationMessageFor(model => model.UOM_Name)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Factor)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Factor)
+            @Html.ValidationMessageFor(model => model.Factor)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.UOM_TypeID, "UOM_Type")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("UOM_TypeID")
+            @Html.ValidationMessageFor(model => model.UOM_TypeID)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

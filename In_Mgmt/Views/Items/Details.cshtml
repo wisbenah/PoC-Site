@@ -1,0 +1,50 @@
+﻿@model In_Mgmt.Models.Item
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Item</legend>
+
+    <div class="display-label">ItemCode</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ItemCode)
+    </div>
+
+    <div class="display-label">ItemName</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ItemName)
+    </div>
+
+    <div class="display-label">ConsumptionUOM</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ConsumptionUOM.CUOM_Name)
+    </div>
+
+    <div class="display-label">InventoryUOM</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.InventoryUOM.IUOM_Name)
+    </div>
+
+    <div class="display-label">StoredUOMs</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.StoredUOMs.SUOM_Name)
+    </div>
+
+    <div class="display-label">DisplayUOMs</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DisplayUOMs.DUOM_Name)
+    </div>
+
+    <div class="display-label">ContainerLocation</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ContainerLocation)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ItemID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

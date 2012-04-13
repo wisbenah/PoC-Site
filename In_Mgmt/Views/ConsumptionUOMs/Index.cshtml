@@ -1,0 +1,45 @@
+﻿@model IEnumerable<In_Mgmt.Models.ConsumptionUOM>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            CUOM_Name
+        </th>
+        <th>
+            CUOM_Code
+        </th>
+        <th>
+            Factor
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CUOM_Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CUOM_Code)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Factor)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.CUOMID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.CUOMID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.CUOMID })
+        </td>
+    </tr>
+}
+
+</table>

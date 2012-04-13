@@ -1,0 +1,57 @@
+﻿@model In_Mgmt.Models.Container
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend>Container</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ContainerCode)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ContainerCode)
+            @Html.ValidationMessageFor(model => model.ContainerCode)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ContainerName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ContainerName)
+            @Html.ValidationMessageFor(model => model.ContainerName)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Max_Capacity)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Max_Capacity)
+            @Html.ValidationMessageFor(model => model.Max_Capacity)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.UOMID, "UOM")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("UOMID")
+            @Html.ValidationMessageFor(model => model.UOMID)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

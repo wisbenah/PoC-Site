@@ -1,0 +1,51 @@
+﻿@model In_Mgmt.Models.InventoryUOM
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend>InventoryUOM</legend>
+
+        @Html.HiddenFor(model => model.IUOMID)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.IUOM_Name)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.IUOM_Name)
+            @Html.ValidationMessageFor(model => model.IUOM_Name)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.SUOM_Code)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.SUOM_Code)
+            @Html.ValidationMessageFor(model => model.SUOM_Code)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Factor)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Factor)
+            @Html.ValidationMessageFor(model => model.Factor)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

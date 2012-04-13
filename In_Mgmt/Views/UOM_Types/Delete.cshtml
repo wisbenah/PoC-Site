@@ -1,0 +1,23 @@
+﻿@model In_Mgmt.Models.UOM_Type
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>UOM_Type</legend>
+
+    <div class="display-label">UOM_Type_Name</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.UOM_Type_Name)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

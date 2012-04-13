@@ -1,0 +1,56 @@
+﻿@model IEnumerable<In_Mgmt.Models.KPI>
+
+@{
+    ViewBag.Title = "ViewKPI";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>ViewKPI</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            KPI_Code
+        </th>
+        <th>
+            KPI_Name
+        </th>
+        <th>
+            Percentage
+        </th>
+        <th>
+            ContainerID
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.KPI_Code)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KPI_Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Percentage)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ContainerID)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.KPIID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.KPIID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.KPIID })
+        </td>
+    </tr>
+}
+
+</table>
+
+<p>
+    @Html.ActionLink("Back To Containers", "../Containers/Index")
+</p>

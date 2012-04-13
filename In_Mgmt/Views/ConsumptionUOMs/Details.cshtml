@@ -1,0 +1,30 @@
+﻿@model In_Mgmt.Models.ConsumptionUOM
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>ConsumptionUOM</legend>
+
+    <div class="display-label">CUOM_Name</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CUOM_Name)
+    </div>
+
+    <div class="display-label">CUOM_Code</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CUOM_Code)
+    </div>
+
+    <div class="display-label">Factor</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Factor)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.CUOMID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

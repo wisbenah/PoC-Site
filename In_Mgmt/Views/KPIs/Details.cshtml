@@ -1,0 +1,35 @@
+﻿@model In_Mgmt.Models.KPI
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>KPI</legend>
+
+    <div class="display-label">KPI_Code</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.KPI_Code)
+    </div>
+
+    <div class="display-label">KPI_Name</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.KPI_Name)
+    </div>
+
+    <div class="display-label">Percentage</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Percentage)
+    </div>
+
+    <div class="display-label">Container</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ContainerID)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.KPIID }) |
+    @Html.ActionLink("Back to List", "ViewKPI", new { id = Model.ContainerID })
+</p>

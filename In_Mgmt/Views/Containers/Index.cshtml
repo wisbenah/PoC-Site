@@ -1,0 +1,53 @@
+﻿@model IEnumerable<In_Mgmt.Models.Container>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Container</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            ContainerCode
+        </th>
+        <th>
+            ContainerName
+        </th>
+        <th>
+            Max_Capacity
+        </th>
+        <th>
+            UOM
+        </th>
+       
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ContainerCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ContainerName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Max_Capacity)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UOM.UOM_Code)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ContainerID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ContainerID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ContainerID }) | 
+            @Html.ActionLink("Add KPI", "Create", "KPIs", new { id = item.ContainerID }, null) | 
+            @Html.ActionLink("View KPI", "ViewKPI", "KPIs", new { id = item.ContainerID }, null)
+        </td>
+    </tr>
+}
+
+</table>

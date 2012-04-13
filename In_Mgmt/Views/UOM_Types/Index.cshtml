@@ -1,0 +1,33 @@
+﻿@model IEnumerable<In_Mgmt.Models.UOM_Type>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>UOM Type</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            UOM_Type_Name
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.UOM_Type_Name)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.UOM_TypeID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.UOM_TypeID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.UOM_TypeID })
+        </td>
+    </tr>
+}
+
+</table>

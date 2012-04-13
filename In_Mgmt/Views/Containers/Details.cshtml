@@ -1,0 +1,41 @@
+﻿@model In_Mgmt.Models.Container
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Container</legend>
+
+    <div class="display-label">ContainerCode</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ContainerCode)
+    </div>
+
+    <div class="display-label">ContainerName</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ContainerName)
+    </div>
+
+    <div class="display-label">Max_Capacity</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Max_Capacity)
+    </div>
+
+    <div class="display-label">UOM_Code</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.UOM.UOM_Code)
+    </div>
+
+    <div class="display-label">KPIs</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => Model.KPIs)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ContainerID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

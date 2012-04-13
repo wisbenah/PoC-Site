@@ -1,0 +1,38 @@
+﻿@model In_Mgmt.Models.KPI
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>KPI</legend>
+
+    <div class="display-label">KPI_Code</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.KPI_Code)
+    </div>
+
+    <div class="display-label">KPI_Name</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.KPI_Name)
+    </div>
+
+    <div class="display-label">Percentage</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Percentage)
+    </div>
+
+    <div class="display-label">Container</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Container.ContainerCode)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "ViewKPI", new { id = Model.ContainerID })
+    </p>
+}

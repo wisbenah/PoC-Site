@@ -1,0 +1,33 @@
+﻿@model In_Mgmt.Models.Location
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>Location</legend>
+
+    <div class="display-label">LocationName</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.LocationName)
+    </div>
+
+    <div class="display-label">LocationCode</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.LocationCode)
+    </div>
+
+    <div class="display-label">Container</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Container.ContainerCode)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}
